@@ -35,6 +35,11 @@ public class Main {
 			result += (Math.abs(plus.get(i))) * 2;
 		} // 플러스 계산
 
+		// 여기서 리스트 빈것 체크 안하면 런타임 오류남 
+		// 반례 
+		/*5 2
+		 * 1 2 3 4 5
+		 * */
 		if (!minus.isEmpty() & !plus.isEmpty()) {
 			if (Math.abs(minus.get(0)) >= Math.abs(plus.get(0))) {
 				// 마이너스가 크니까 한번 더했던걸 빼주기
